@@ -59,7 +59,7 @@ function instruction() {
     instructionContainer.id = "instruction-Container";
 
     textElement = document.createElement("p");
-    textElement.innerHTML = "Dang, that's a lot of cockroaches. Help Booey get rid of them all by clicking on it. Make sure to check behind the furniture (press the up arrow).";
+    textElement.innerHTML = "Dang, that's a lot of cockroaches. Help Booey get rid of them all by clicking on it. Make sure to check behind the furniture (press the up arrow).  You can move up and down by pressing shift + up arrow or shift + down arrow. Press the space bar to collect bugs as you move over them.";
     textElement.style.margin = "10px";  // Add margin to the text
     instructionContainer.appendChild(textElement);
     document.body.appendChild(instructionContainer);
