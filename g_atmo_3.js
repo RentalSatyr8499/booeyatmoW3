@@ -230,7 +230,7 @@ document.onkeydown = function(e) {
             }
             for (var i = 0; i < levelBugCoords[level].length; i++){
                 console.log("checking level " + [level] + " for highlighted bugs.");
-                if (levelBugCoords[level][i]["HL"] && levelBugCoords[level][i]["on"]){
+                if (levelBugCoords[level][i]["HL"] == true && levelBugCoords[level][i]["on"]){
                     console.log("highlighted bug found!");
                     levelBugCoords[level][i]["on"] = false;
                     console.log(levelBugCoords[level]);
@@ -242,7 +242,7 @@ document.onkeydown = function(e) {
             if (level == 0) {
                 console.log("checking for general highlighted bugs.")
                 for (var i = 0; i < generalBugCoords.length; i++) {
-                    if (generalBugCoords[i]["HL"]) {
+                    if (generalBugCoords[i]["HL"] && generalBugCoords[i]["on"]) {
                         console.log("highlighted bug found!");
                         generalBugCoords[i]["on"] = false;
                         console.log(generalBugCoords);
